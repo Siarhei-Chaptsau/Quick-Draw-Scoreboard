@@ -6,7 +6,7 @@
 ВАЖНО: 
 Для обзора работы нужно скачать данный репозиторий и использовать сервер.
 
-https://www.npmjs.com/package/live-server
+[live-server](https://www.npmjs.com/package/live-server)
 ---
 
 Репозиторий создан для прохождения обучения на интенсивном курсе от [The Rolling Scopes school](https://school.rollingscopes.com) (EPAM Systems).
