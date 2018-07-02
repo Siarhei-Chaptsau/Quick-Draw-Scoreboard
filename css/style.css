@@ -46,12 +46,58 @@ body {
 }
 
 .scoreboard__input {
+	display: none;
 	margin-right: 10px;
+}
+
+.scoreboard__text {
+  position: relative;
+  display: block;
+  padding: 15px 0 15px 50px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.scoreboard__text::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 15px;
+  border-radius: 50%;
+  border: 2px solid #d4d1d1;
+  box-sizing: border-box;
+}
+
+.scoreboard__text:hover::after {
+  border-color: #000;
+}
+
+.scoreboard__text:active::after {
+  border-color: #d22856;
+}
+
+.scoreboard__input:checked + .scoreboard__text::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 27px;
+  left: 13px;
+  border-radius: 50%;
+  background-color: #d22856;
+  z-index: 1;
 }
 
 .scoreboard__table {
 	width: 100%;
-	border-collapse: collapse;
+}
+
+.scoreboard__table-tag {
+  border-collapse: collapse;
 }
 
 .scoreboard__item {

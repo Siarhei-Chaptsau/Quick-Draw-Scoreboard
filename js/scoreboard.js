@@ -9,7 +9,7 @@ window.onload =  function () {
     let arrOfUsersWithResults = []; // массив имён с резалтами раундов
 
     fetch('dumps/users.json')
-      .then(function(response) {        
+      .then(function(response) {
         return response.json();
        })
       .then(function(users) {
@@ -110,6 +110,7 @@ window.onload =  function () {
             }
           }
           scoreboardTable.appendChild(table);
+          scoreboardTable.classList.add('scoreboard__table-tag');
         })
         .then(
           result => result,
